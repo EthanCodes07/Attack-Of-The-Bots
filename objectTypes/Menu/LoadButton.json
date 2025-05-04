@@ -1,0 +1,9 @@
+{
+	"name": "LoadButton",
+	"plugin-id": "Button",
+	"sid": 227157636015635,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

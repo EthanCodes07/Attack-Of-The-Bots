@@ -1,0 +1,575 @@
+{
+	"name": "Level1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "playerHP",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "HP",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 998557030563080
+		},
+		{
+			"eventType": "variable",
+			"name": "HaveKey",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 647795823174118
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "PauseMenu"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Enemy Script"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 344278016672712
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Door",
+					"sid": 316540601674069
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Door",
+					"sid": 681308075156818,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 221282310699711,
+					"parameters": {
+						"slot": "\"SaveState1\""
+					}
+				},
+				{
+					"id": "set-framerate-mode",
+					"objectClass": "System",
+					"sid": 184301449974138,
+					"parameters": {
+						"framerate-mode": "vsync"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 520118955302526,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 631361480548761,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 830377356611199,
+					"parameters": {
+						"layer": "4",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 933399297163924,
+					"parameters": {
+						"text": "\"Hey, Wake Up!\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 139425998346212,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 331292922363180,
+					"parameters": {
+						"text": "\"I Said WAKE UP!!\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 886847685749190,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "DialogeArrow",
+					"sid": 404173394209194,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 165501803119841,
+					"parameters": {
+						"text": "\"Oh. You Are Awake. Good\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 580938166866078,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "DialogeArrow",
+					"sid": 803625320285311,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 575973105884192
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 520101309953366
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "Trees",
+					"sid": 495573153045057,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 922480469653222
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "DialogeArrow",
+					"sid": 778193043158166,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-fade",
+					"objectClass": "DialogeArrow",
+					"sid": 993762716437683,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 494691518368213
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "InputKeyboard",
+					"sid": 435704206641998,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 597865482480582,
+					"parameters": {
+						"layer": "4",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 760580129600583,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 459699142188744,
+					"parameters": {
+						"audio-file": "Street Strolin - Attack of the Bots OST",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 931074288351981,
+					"parameters": {
+						"text": "playerHP"
+					}
+				}
+			],
+			"sid": 117641668291195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerFD",
+					"sid": 496918248114961,
+					"parameters": {
+						"object": "Sprite5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 538925680105252,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 368236803118105,
+					"parameters": {
+						"variable": "HaveKey",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 356081730705155
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerFD",
+					"sid": 743638793462069,
+					"parameters": {
+						"object": "Door"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 459411482611062,
+					"parameters": {
+						"variable": "HaveKey"
+					}
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 928202838517493,
+					"parameters": {
+						"name": "\"Door\"",
+						"start-index": "1",
+						"end-index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "Door",
+					"sid": 705247817164740,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Door",
+					"sid": 925372604649896,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "MenuSoundtrack",
+					"sid": 244028739730024,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 370004492633039,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 674586801912282,
+					"parameters": {
+						"layout": "Level2"
+					}
+				}
+			],
+			"sid": 264350527780024
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "PlayerFD",
+					"sid": 545069246846780,
+					"parameters": {
+						"object": "BIN",
+						"offset-x": "10",
+						"offset-y": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 741822905453135,
+					"parameters": {
+						"layer": "2",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 883061191878393,
+					"parameters": {
+						"text": "\"Something smells fleshy here.\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 697950871927531,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 604154544450950,
+					"parameters": {
+						"text": "\"o h.\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 438039782096049,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Dialoge",
+					"sid": 529571120606133,
+					"parameters": {
+						"text": "\"thats- um- sad.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 297407269266734,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 426758724322130,
+					"parameters": {
+						"layer": "2",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 757281198180211
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 485272285728845,
+					"parameters": {
+						"object": "PlayerFD"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 723254258063516,
+					"parameters": {
+						"variable": "playerHP",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 786279115540748,
+					"parameters": {
+						"text": "playerHP"
+					}
+				}
+			],
+			"sid": 904997371543846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 894335422263462,
+					"parameters": {
+						"variable": "playerHP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "MenuSoundtrack",
+					"sid": 736361326233244,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 237816630616365,
+					"parameters": {
+						"audio-file": "glitch03",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 890309257616063,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerFD",
+					"sid": 122160203333648
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 797625922496170,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 325029193732852,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 600904732643559
+		}
+	],
+	"sid": 980395005944113
+}

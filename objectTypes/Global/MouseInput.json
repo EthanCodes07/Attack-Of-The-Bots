@@ -1,0 +1,12 @@
+{
+	"name": "MouseInput",
+	"plugin-id": "Mouse",
+	"sid": 791303281820139,
+	"singleglobal-inst": {
+		"type": "MouseInput",
+		"properties": {},
+		"uid": 14,
+		"sid": 780952912959816,
+		"tags": ""
+	}
+}

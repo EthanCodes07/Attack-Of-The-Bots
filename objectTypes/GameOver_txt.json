@@ -1,0 +1,16 @@
+{
+	"name": "GameOver_txt",
+	"plugin-id": "Text",
+	"sid": 681422983202544,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 123131210883764
+		}
+	],
+	"effectTypes": []
+}

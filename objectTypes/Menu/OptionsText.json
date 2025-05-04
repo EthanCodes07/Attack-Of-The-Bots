@@ -1,0 +1,15 @@
+{
+	"name": "OptionsText",
+	"plugin-id": "Text",
+	"sid": 548676519209246,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "SetColor"
+		}
+	]
+}

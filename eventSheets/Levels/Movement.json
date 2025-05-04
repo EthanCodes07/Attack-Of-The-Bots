@@ -1,0 +1,451 @@
+{
+	"name": "Movement",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "InputKeyboard",
+					"sid": 298618392867950,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerFD",
+					"sid": 455721772436791,
+					"parameters": {
+						"animation": "\"Upwards\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "PlayerFD",
+					"sid": 673176516672706,
+					"parameters": {
+						"speed": "5"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "PlayerFD",
+					"sid": 945266521277288,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 210570874156042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "InputKeyboard",
+					"sid": 555671113951912,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "PlayerFD",
+					"sid": 651262242330750,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 517598238593270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "InputKeyboard",
+					"sid": 381027711215583,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerFD",
+					"sid": 683324072578050,
+					"parameters": {
+						"animation": "\"Right\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "PlayerFD",
+					"sid": 101937653677063,
+					"parameters": {
+						"speed": "5"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "PlayerFD",
+					"sid": 385269622901210,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 378953550171537
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "InputKeyboard",
+					"sid": 591043628198291,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "PlayerFD",
+					"sid": 634257885387493,
+					"parameters": {
+						"animation": "\"Left\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "PlayerFD",
+					"sid": 525054647402748,
+					"parameters": {
+						"speed": "5"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "PlayerFD",
+					"sid": 436534548967088,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 613079822824403
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "InputKeyboard",
+					"sid": 543543939828292,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "WindAbility",
+					"sid": 669586822315933,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 252457867757798
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "InputKeyboard",
+					"sid": 294913656525647,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "WindAbility",
+					"sid": 127905410430999,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 904293010048625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "InputKeyboard",
+					"sid": 158227415155903,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "LazerGun",
+					"sid": 461283609261688,
+					"parameters": {
+						"frame-number": "1"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "PlayerFD",
+					"sid": 997695762826519,
+					"parameters": {
+						"object": "Lazer",
+						"layer": "2",
+						"image-point": "1",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 528411671954952
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "PlayerFD",
+					"sid": 677092616141123,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Enemy",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 473681493909106
+				}
+			],
+			"actions": [
+				{
+					"id": "follow-object",
+					"objectClass": "Lazer",
+					"sid": 760319460639518,
+					"behaviorType": "Follow",
+					"parameters": {
+						"object": "Enemy",
+						"from-current-position": true
+					}
+				}
+			],
+			"sid": 967727084267768
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "InputKeyboard",
+					"sid": 831030947723558,
+					"parameters": {
+						"key": 81
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "LazerGun",
+					"sid": 879835465732598,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 681321179217443
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Lazer",
+					"sid": 778150117100179,
+					"parameters": {
+						"object": "Enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Lazer",
+					"sid": 992554884453421
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Enemy",
+					"sid": 242476891701755,
+					"parameters": {
+						"instance-variable": "EHP",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 760198309976490,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Lazer",
+					"sid": 209340824442058,
+					"parameters": {
+						"object": "BOSS1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Lazer",
+					"sid": 885168558067693
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "BOSS1",
+					"sid": 927482247926239,
+					"parameters": {
+						"instance-variable": "BOSSHP",
+						"value": "10"
+					}
+				}
+			],
+			"sid": 929519301762365,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "BOSS1",
+					"sid": 932429857243131,
+					"parameters": {
+						"instance-variable": "BOSSHP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "BOSS1",
+					"sid": 751735428830863
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "MenuSoundtrack",
+					"sid": 763768428572991,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 330819829678636,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 664180166015170,
+					"parameters": {
+						"layout": "Layout 2"
+					}
+				}
+			],
+			"sid": 290166679861209
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Enemy",
+					"sid": 288388125577962,
+					"parameters": {
+						"instance-variable": "EHP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy",
+					"sid": 621710082078822
+				}
+			],
+			"sid": 375688748135474
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Lazer",
+					"sid": 637308773812301,
+					"parameters": {
+						"object": "Tilemap3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Lazer",
+					"sid": 818134077623798
+				}
+			],
+			"sid": 176492287488274
+		}
+	],
+	"sid": 994692662413958
+}

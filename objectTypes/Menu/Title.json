@@ -1,0 +1,16 @@
+{
+	"name": "Title",
+	"plugin-id": "Text",
+	"sid": 577596831542283,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 478753675743471
+		}
+	],
+	"effectTypes": []
+}

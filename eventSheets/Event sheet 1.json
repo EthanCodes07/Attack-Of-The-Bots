@@ -1,0 +1,97 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 536559263401834
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "GameOver_txt",
+					"sid": 110087000986495,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 696075749659163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "GameOver_txt",
+					"sid": 444198462524128,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-fade",
+					"objectClass": "GameOver_txt",
+					"sid": 367766465818400,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 867585537430264
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 511771336979353,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "GO_RestartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 265322362400984,
+					"parameters": {
+						"slot": "\"SaveState1\""
+					}
+				}
+			],
+			"sid": 110143102850941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 457758027216649,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "GO_menuBu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 346441880641724,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 227450511149529
+		}
+	],
+	"sid": 449994238434599
+}

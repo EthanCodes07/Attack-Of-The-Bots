@@ -1,0 +1,101 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "BOSS1",
+					"sid": 640757213821757,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "PlayerFD",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 883174854760377,
+					"parameters": {
+						"name": "\"TARGETAQUIRED\"",
+						"start-index": "1",
+						"end-index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 560606809337117,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 385377858800695,
+					"parameters": {
+						"audio-file": "Bloody Metal - Attack of the Bots OST",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "BOSS1",
+					"sid": 844575761122608,
+					"behaviorType": "Follow",
+					"parameters": {
+						"state": true
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "BOSS1",
+					"sid": 860580630273454,
+					"behaviorType": "Turret",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "BOSS1",
+					"sid": 302984705659570,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "PlayerFD"
+					}
+				},
+				{
+					"id": "acquire-target",
+					"objectClass": "BOSS1",
+					"sid": 298315603689543,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "PlayerFD"
+					}
+				},
+				{
+					"id": "follow-object",
+					"objectClass": "BOSS1",
+					"sid": 105859148308300,
+					"behaviorType": "Follow",
+					"parameters": {
+						"object": "PlayerFD",
+						"from-current-position": false
+					}
+				}
+			],
+			"sid": 108093828229118
+		}
+	],
+	"sid": 551378925083301
+}

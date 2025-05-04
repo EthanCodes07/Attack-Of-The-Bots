@@ -1,0 +1,16 @@
+{
+	"name": "Health",
+	"plugin-id": "Text",
+	"sid": 239636602270294,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pin",
+			"sid": 383237453928909
+		}
+	],
+	"effectTypes": []
+}

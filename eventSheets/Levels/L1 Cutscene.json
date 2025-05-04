@@ -1,0 +1,152 @@
+{
+	"name": "L1 Cutscene",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 160200497719001
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 170639081125021,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 515040759551222,
+					"parameters": {
+						"text": "\"Year: 2199\"",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 445245847552713,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 696932268157588,
+					"parameters": {
+						"text": "\"The Bots Designed and Built at Repo.Inc went rogue.\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 157496921871303,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 307951435373843,
+					"parameters": {
+						"text": "\"They wiped almost all the population of living beings only 1% at the time of writing\"",
+						"duration": "3"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 283262034237318,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "Backstory",
+					"sid": 335260559991413,
+					"parameters": {
+						"color": "rgbEx(100, 0, 0)"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 674090047396729,
+					"parameters": {
+						"text": "\"take\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 731509149431061,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 373872720565840,
+					"parameters": {
+						"text": "\"them\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 772900208360371,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "Backstory",
+					"sid": 175808955059942,
+					"parameters": {
+						"text": "\"out\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 128503001403935,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 470029141169084,
+					"parameters": {
+						"layout": "Level1"
+					}
+				}
+			],
+			"sid": 939992708487618
+		}
+	],
+	"sid": 627560256135888
+}

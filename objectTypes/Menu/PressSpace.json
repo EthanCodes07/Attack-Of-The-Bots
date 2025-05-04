@@ -1,0 +1,16 @@
+{
+	"name": "PressSpace",
+	"plugin-id": "Text",
+	"sid": 381924766436948,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 820409061052606
+		}
+	],
+	"effectTypes": []
+}

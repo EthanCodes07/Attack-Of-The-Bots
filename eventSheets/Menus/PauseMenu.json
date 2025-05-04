@@ -1,0 +1,310 @@
+{
+	"name": "PauseMenu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "InputKeyboard",
+					"sid": 293171890971108,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Trees",
+					"sid": 434491532529990,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BIN",
+					"sid": 906524927337777,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerFD",
+					"sid": 865490541931810,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Tilemap3",
+					"sid": 605946554349747,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"FrostedGlass\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 476641856276922,
+					"parameters": {
+						"layer": "6",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 485362236875489,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "MenuSoundtrack",
+					"sid": 461860488416856,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-25",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Pause_Menu_BG",
+					"sid": 201613409531845,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HealthBar",
+					"sid": 291105694635774,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Health",
+					"sid": 422622406825887,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Box",
+					"sid": 125213584977875,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WindAbility",
+					"sid": 203210547290722,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LazerGun",
+					"sid": 695607137280919,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 455903267395338
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 415305912075809,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ResumeButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Trees",
+					"sid": 180594426103333,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BIN",
+					"sid": 988094573229537,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PlayerFD",
+					"sid": 115521127205929,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Tilemap3",
+					"sid": 378103726089215,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"FrostedGlass\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 754261026017132,
+					"parameters": {
+						"layer": "6",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 398434957147068,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "MenuSoundtrack",
+					"sid": 367052212385217,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "0",
+						"duration": "1",
+						"ending": "keep-playing"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HealthBar",
+					"sid": 281130249463373,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Health",
+					"sid": 539259359067884,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Box",
+					"sid": 717793192088722,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "WindAbility",
+					"sid": 193571390664766,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "LazerGun",
+					"sid": 936773615562826,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 158483212250909
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 449833992506878,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "CheckpointButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 504509011869198,
+					"parameters": {
+						"slot": "\"SaveState1\""
+					}
+				}
+			],
+			"sid": 717899059388607
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 731202558933517,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ExitButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 676550365537174,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "MenuSoundtrack",
+					"sid": 368473653613112,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 396783668470230
+		}
+	],
+	"sid": 855871452855740
+}

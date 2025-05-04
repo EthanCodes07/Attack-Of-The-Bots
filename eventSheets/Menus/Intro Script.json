@@ -1,0 +1,243 @@
+{
+	"name": "Intro Script",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 377977927524016
+				}
+			],
+			"actions": [
+				{
+					"id": "typewriter-text",
+					"objectClass": "TermIntro",
+					"sid": 444811021845367,
+					"parameters": {
+						"text": "\"C:/ProgramFiles/AttackoftheBots/do_not_open.exe\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 503575985191680,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 933078863510980,
+					"parameters": {
+						"audio-file": "glitch03",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"intro1\""
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "TermIntro",
+					"sid": 700450290505331,
+					"parameters": {
+						"color": "rgbEx(100, 0, 0)"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TermIntro",
+					"sid": 717172954093095,
+					"parameters": {
+						"text": "\"21.00.25 STC09048 IEF6951 START SS11MSTR WITH JOBNAME SS11MSTR IS ASSIGNED TO USER MADPRD GROUP OMVSGRP\r\n21.00.25 STC09048 $HASP373 SSIIMSTR STARTED\r\n21.00.25 STC09048 ACF9CCCD USERID MADPRD IS ASSIGNED TO THIS JOBSS11MSTR\r\n21.00.25 STC09048 IEF4031 SS11MSTR - STARTED-TIME-21.00.25\r\n03.58.02 STC09048 DSNJ110E SS11 LAST COPY 1 ACTIVE LOG DATA SET IS 90\r\nPERCENT FULL\r\n03.58.05 STC09048 DSNJ1I0E SS11 LAST COPY 1 ACTIVE LOG DATA SET IS 95 PERCENT FULL\r\n03.58.10 STC09048 DSNJILIE SS11 OUT OF SPACE IN ACTIVE LOG DATA SETS\r\n13.28.15 STC10799 DSN10311 !SS11 DSNILKES-LOCK ESCALATION HAS 337\r\n337 OCCURRED FOR\r\n337 RESOURCE NAME = CCM30.CHANIAVS\r\n337 LOCK STATE = X\r\n337 PLAN NAME: PACKAGE NAME = DISTSERV: SYSLH200\r\n337 COLLECTION-ID = NULLID\r\n337 STATEMENT NUMBER = 000001\r\n337 CORRELATION-ID = db2javal\r\n337 CONNECTION-ID = SERVER\r\n337 LUW-ID ODCA1AD7.0744.C7F340EE13E9\r\n337\r\n337\r\nTHREAD-INFO = ABCPROD: usilap533a.org.co: ABCPROD:\r\n13.31.55\r\ndb2javal appl\r\nSTC10799 DSNT3761 !SS11 PLAN DISTSERV WITH 670\r\n670 CORRELATION-ID=db2javal\r\n670\r\nCONNECTION-ID-SERVER\r\n670 LUW-ID-ODCA1AD7.FAC8.C7F17F909299-141851\r\n670 THREAD-INFO=ABCPROD: usilap533a.org.co: ABCPROD: db2javalappl\r\n670 IS TIMED OUT. ONE HOLDER OF THE RESOURCE IS PLAN=DISTSERV\r\n670 WITH\r\n670 670 CORRELATION-ID=db2java1 CONNECTION-ID-SERVER\r\n670\r\nLUW-ID-ODCA1AD7.0744.C7F340EE13E9-2777\r\n670 THREAD-INFO=ABCPROD: usilap533a.org.co: ABCPROD: db2javalappl\r\n670\r\nON MEMBER SS11\r\n13.31.56 STC10799 DSNT5011 !SS11 DSNILMCL RESOURCE UNAVAILABLE 671\r\n671 CORRELATION-ID=db2javal\r\n671\r\nCONNECTION-ID-SERVER\r\n671 LUW-ID-ODCA1AD7.FAC8.C7F17F909299-141851\r\n671 REASON 00C9008E\r\n671 ΤΥΡΕ 00000210\r\n671 NAME CCM30.CONFIX1W.00000001\"",
+						"duration": "2"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 992550426457733,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TermIntro",
+					"sid": 554707095592465,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 767983710137372,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-font-face",
+					"objectClass": "TermIntro",
+					"sid": 538011131436079,
+					"parameters": {
+						"font-face": "\"Swiss721LightExtendedBT\"",
+						"style": "normal"
+					}
+				},
+				{
+					"id": "set-horizontal-alignment",
+					"objectClass": "TermIntro",
+					"sid": 418950252291878,
+					"parameters": {
+						"horizontal-alignment": "center"
+					}
+				},
+				{
+					"id": "set-vertical-alignment",
+					"objectClass": "TermIntro",
+					"sid": 312738788507520,
+					"parameters": {
+						"vertical-alignment": "center"
+					}
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "TermIntro",
+					"sid": 819421933439027,
+					"parameters": {
+						"color": "rgbEx(100, 100, 100)"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TermIntro",
+					"sid": 220417865830040,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TermIntro",
+					"sid": 524905141147777,
+					"parameters": {
+						"text": "\"A Game Made By Ethan Bradley\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 652396960255557,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 613067086521765,
+					"parameters": {
+						"audio-file": "Glitch_5",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TermIntro",
+					"sid": 912245436138048,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 980521021231124,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TermIntro",
+					"sid": 226368297393853,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "typewriter-text",
+					"objectClass": "TermIntro",
+					"sid": 969844466029646,
+					"parameters": {
+						"text": "\"Please Note that this is a Concept Demo, the game is suspect to change\"",
+						"duration": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 621193427280996,
+					"parameters": {
+						"seconds": "4",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 950709232857798,
+					"parameters": {
+						"audio-file": "Glitch_21",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TermIntro",
+					"sid": 962448829361343,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 893212532112034,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 329194478574261,
+					"parameters": {
+						"layout": "MainMenu"
+					}
+				}
+			],
+			"sid": 576504415623008
+		}
+	],
+	"sid": 558003928586726
+}

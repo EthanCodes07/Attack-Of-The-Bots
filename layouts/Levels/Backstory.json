@@ -1,0 +1,192 @@
+{
+	"name": "Backstory",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "TiledBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 26,
+					"sid": 938936114385555,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 938936114385555,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -4,
+						"y": -4,
+						"width": 1926,
+						"height": 1086,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Backstory",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Swiss721LightExtendedBT",
+						"size": 28,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 28,
+					"sid": 441093048257998,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 441093048257998,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 708,
+						"y": 447,
+						"width": 448,
+						"height": 167,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 791497569929946,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"scene-graphs-folder-root": {
+		"items": [],
+		"subfolders": []
+	},
+	"sid": 896413010378209,
+	"nonworld-instances": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterCRT",
+			"name": "BetterCRT",
+			"instance": {
+				"isEnabled": true,
+				"parameters": {
+					"resolution-x": 1920,
+					"resolution-y": 1080,
+					"distort-intensity": 1.5,
+					"scanlines-intensity": 0.65,
+					"color-adjustment": [
+						1,
+						1,
+						1,
+						1
+					],
+					"red-offset-x": 0.001,
+					"red-offset-y": 0.001,
+					"green-offset-x": 0,
+					"green-offset-y": -0.002,
+					"blue-offset-x": -0.002,
+					"blue-offset-y": 0,
+					"barrel-distortion-strength": 0.01,
+					"barrel-distortion-zoom": 0.01,
+					"distortion-strength": 1,
+					"distortion-speed": 1,
+					"distortion-frequency": 1,
+					"bloom-intensity": 0
+				}
+			}
+		}
+	],
+	"width": 1920,
+	"height": 1080,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "L1 Cutscene"
+}

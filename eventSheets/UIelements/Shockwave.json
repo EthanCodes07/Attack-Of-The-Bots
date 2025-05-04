@@ -1,0 +1,178 @@
+{
+	"name": "Shockwave",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "[h1]Shockwave effect example[/h1]",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "[b]Parameters documentation:[/b]",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> centerx: the X coordinate of the shockwave's center, expressed as percentage (0 - 100) where 0% represents the leftmost part of the image and 100% the rightmost one.",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> centery: the Y coordinate of the shockwave's center, expressed as percentage (0 - 100) where 0% represents the upper part of the image and 100% the lower one.",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> radius1: the radius, expressed as a percentage of the object's witdth, of the outermost part of the shockwave",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> radius2: the radius, expressed as a percentage of the object's witdth, of the innermost part of the shockwave. radius1 - radius2 is equal to the thickness of the shockwave",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> distortionstrength: the strength of the distortion, low values are recommended",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> chromatic offset: the offset of the shockwave's chromatic aberration effect. Larger values result in more chromatic aberration. Very low values are recommended. Use 0 to remove chromatic aberration.",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "> ring blur: smoothness of the shockwave effect. Low values result in a sharper look.",
+			"text-color": [
+				0.9686274509803922,
+				0.9686274509803922,
+				0.9686274509803922,
+				1
+			]
+		},
+		{
+			"eventType": "variable",
+			"name": "SHOCKWAVE_THICKNESS",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 688449939304035
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 414716171317645
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite",
+					"sid": 380701644405461,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"Shockwave\""
+					}
+				}
+			],
+			"sid": 202407730812288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Touch",
+					"sid": 245154899161400,
+					"parameters": {
+						"object": "StartText",
+						"type": "start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "Sprite",
+					"sid": 760960514814998,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Shockwave\""
+					}
+				},
+				{
+					"type": "comment",
+					"text": "the position of shockwave's center must be given as a percentage. In Construct this means that we need to input a number between 0 and 100"
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Sprite",
+					"sid": 944163123182299,
+					"parameters": {
+						"effect": "\"Shockwave\"",
+						"parameter-index": "0",
+						"value": "(Touch.X - Sprite.BBoxLeft) / Sprite.Width * 100"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "Sprite",
+					"sid": 866759673092574,
+					"parameters": {
+						"effect": "\"Shockwave\"",
+						"parameter-index": "1",
+						"value": "(Touch.Y - Sprite.BBoxTop) / Sprite.Height * 100"
+					}
+				}
+			],
+			"sid": 458788965270261
+		}
+	],
+	"sid": 871232401692617
+}

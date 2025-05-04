@@ -1,0 +1,617 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 43203,
+	"name": "Attack of the Bots v0.3",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "progressbar",
+			"name": "Progress bar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Follow",
+			"name": "Follow",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Shadow caster",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "Lottes",
+			"name": "Lottes CRT",
+			"author": "Timothy Lottes / converted by Erik Thon",
+			"bundled": false,
+			"version": "1.0.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "better_shine",
+			"name": "Better Shine",
+			"author": "skymen",
+			"bundled": false,
+			"version": "1.0.0.1"
+		},
+		{
+			"type": "effect",
+			"id": "federicoCalchera_frostedGlass",
+			"name": "Frosted Glass",
+			"author": "Federico Calchera",
+			"bundled": false,
+			"version": "1.1.0.0"
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Set color",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterCRT",
+			"name": "Better CRT",
+			"author": "skymen",
+			"bundled": false,
+			"version": "2.0.0.2"
+		}
+	],
+	"uniqueId": "l2u7sddfkfg",
+	"objectTypes": {
+		"items": [
+			"Sprite2",
+			"Sprite3",
+			"Sprite4",
+			"Tilemap3",
+			"TiledBackground",
+			"Backstory",
+			"TermIntro",
+			"HealthBar",
+			"Door",
+			"Trees",
+			"Box",
+			"Pause_Menu_BG",
+			"Pause_Title",
+			"ResumeButton",
+			"CheckpointButton",
+			"PauseOptionsButton",
+			"ExitButton",
+			"FrostGlass",
+			"PlayerFD",
+			"TiledBackground2",
+			"GameOver_txt",
+			"GO_RestartButton",
+			"GO_menuBu",
+			"Lazer",
+			"Sprite5",
+			"Tilemap4",
+			"SideDoor1",
+			"BOSS1",
+			"Sprite6",
+			"SideDoor2",
+			"Sprite7",
+			"TiledBackground3",
+			"Text"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"backgroundtemp",
+					"LoadButton",
+					"LoadingText",
+					"LoadText",
+					"OptionsButton",
+					"OptionsText",
+					"PressSpace",
+					"StartButton",
+					"Sprite",
+					"starsparticles",
+					"StartText",
+					"Title",
+					"VersionNumber"
+				],
+				"subfolders": [],
+				"name": "Menu"
+			},
+			{
+				"items": [
+					"InputKeyboard",
+					"MenuSoundtrack",
+					"MouseInput",
+					"SaveState1",
+					"Touch",
+					"DialogeBox",
+					"Dialoge",
+					"DialogeArrow",
+					"Health",
+					"WindAbility",
+					"LazerGun",
+					"Enemy",
+					"HealthFD"
+				],
+				"subfolders": [],
+				"name": "Global"
+			},
+			{
+				"items": [
+					"Tilemap",
+					"Tilemap2",
+					"BIN"
+				],
+				"subfolders": [],
+				"name": "Level 1"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"MainMenu",
+					"LoadMenu",
+					"OptionsMenu",
+					"PauseMenu",
+					"Intro",
+					"Layout 1"
+				],
+				"subfolders": [],
+				"name": "Menus"
+			},
+			{
+				"items": [
+					"Level1",
+					"Backstory",
+					"Level2",
+					"Layout 2"
+				],
+				"subfolders": [],
+				"name": "Levels"
+			},
+			{
+				"items": [
+					"LoadMapOverlay"
+				],
+				"subfolders": [],
+				"name": "LoadMapOverlay"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"Enemy Script",
+			"Event sheet 1",
+			"Event sheet 2",
+			"Event sheet 3"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"MainMenuEvents",
+					"LoadMenu",
+					"OptionsMenu",
+					"PauseMenu",
+					"Intro Script"
+				],
+				"subfolders": [],
+				"name": "Menus"
+			},
+			{
+				"items": [
+					"Level1",
+					"Movement",
+					"L1 Cutscene",
+					"Level2"
+				],
+				"subfolders": [],
+				"name": "Levels"
+			},
+			{
+				"items": [
+					"LoadMapOverlay"
+				],
+				"subfolders": [],
+				"name": "LoadMapOverlay"
+			},
+			{
+				"items": [
+					"Shockwave"
+				],
+				"subfolders": [],
+				"name": "UIelements"
+			}
+		]
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Menu - Attack of the Bots OST.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 168946828196127,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Click_Combo_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 470058423777358,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "glitch07.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 256941986360356,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "glitch04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 389933240179320,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Street Strolin - Attack of the Bots OST.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 119467362487389,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "glitch03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 749635193414931,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Glitch_21.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 456616726923327,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Glitch_5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 629134232709814,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Bloody Metal - Attack of the Bots OST.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 260491908315432,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [
+				{
+					"name": "Swiss721LightExtendedBT.ttf",
+					"type": "application/font-sfnt",
+					"sid": 597675661760869,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 423631916708324,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 546214560702683,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 833020753719485,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 356726319596779,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 545848159324701,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 128820168445200,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 322635875951282,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"Timeline 1"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [
+			"Flowchart 1"
+		],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "0.3",
+		"autoIncrementVersion": false,
+		"author": "Ethan Bradley",
+		"authorEmail": "bradleyethan2007@gmail.com",
+		"authorWebsite": "https://ethanbuildsgames.itch.io",
+		"appId": "com.ethan.aotb",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "scale-outer",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "progress",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https",
+		"exportFileStructure": "folders",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"firstLayout": "Intro"
+}

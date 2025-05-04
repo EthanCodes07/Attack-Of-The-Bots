@@ -1,0 +1,14 @@
+{
+	"name": "SaveState1",
+	"plugin-id": "LocalStorage",
+	"sid": 883120062696673,
+	"singleglobal-inst": {
+		"type": "SaveState1",
+		"properties": {
+			"in-memory-only": false
+		},
+		"uid": 15,
+		"sid": 548762860394786,
+		"tags": ""
+	}
+}

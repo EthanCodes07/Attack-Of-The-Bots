@@ -1,0 +1,419 @@
+{
+	"name": "Level2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "playerHP2",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "HP",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 683280900480298
+		},
+		{
+			"eventType": "variable",
+			"name": "Enemies_Deads",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 843856129833373
+		},
+		{
+			"eventType": "variable",
+			"name": "HaveKey2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 532057301191768
+		},
+		{
+			"eventType": "variable",
+			"name": "BOSS1DEAD",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 652777625563026
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Movement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "PauseMenu"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Enemy Script"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Event sheet 2"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 631093970932465
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "SideDoor1",
+					"sid": 979059984057192
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "SideDoor1",
+					"sid": 893521653461829,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 663298300044072,
+					"parameters": {
+						"slot": "\"SaveState1\""
+					}
+				},
+				{
+					"id": "set-framerate-mode",
+					"objectClass": "System",
+					"sid": 620659364407315,
+					"parameters": {
+						"framerate-mode": "vsync"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 125525343451589,
+					"parameters": {
+						"seconds": "1",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlayerFD",
+					"sid": 572899853465286,
+					"behaviorType": "8Direction",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 705349025163777,
+					"parameters": {
+						"text": "playerHP"
+					}
+				}
+			],
+			"sid": 634438156919995
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerFD",
+					"sid": 119929360033809,
+					"parameters": {
+						"object": "Sprite7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 706111721907234,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 506877854829447,
+					"parameters": {
+						"variable": "HaveKey2",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 362727957412587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Enemy",
+					"sid": 664928444872399
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 423892371099634,
+					"parameters": {
+						"variable": "Enemies_Deads"
+					}
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 775286782054796,
+					"parameters": {
+						"name": "\"Door\"",
+						"start-index": "1",
+						"end-index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "SideDoor1",
+					"sid": 369404827362815,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "SideDoor1",
+					"sid": 255780546681419,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 920435484440420
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerFD",
+					"sid": 817221907169163,
+					"parameters": {
+						"object": "SideDoor2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 185879162807489,
+					"parameters": {
+						"variable": "HaveKey2"
+					}
+				},
+				{
+					"id": "for",
+					"objectClass": "System",
+					"sid": 494151273471176,
+					"parameters": {
+						"name": "\"Door\"",
+						"start-index": "1",
+						"end-index": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "start-animation",
+					"objectClass": "SideDoor2",
+					"sid": 482098989939932,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "SideDoor2",
+					"sid": 303808226989787,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 361872050294978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Enemy",
+					"sid": 960438588397171
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 663718699955106,
+					"parameters": {
+						"variable": "Enemies_Deads"
+					}
+				}
+			],
+			"sid": 351297797948096
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 140023814048007,
+					"parameters": {
+						"object": "PlayerFD"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 711739070373537,
+					"parameters": {
+						"variable": "playerHP",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 426420939920078,
+					"parameters": {
+						"text": "playerHP"
+					}
+				}
+			],
+			"sid": 641754163394979
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "BOSS1",
+					"sid": 308759499059401,
+					"parameters": {
+						"object": "PlayerFD"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 823941348554294,
+					"parameters": {
+						"variable": "playerHP",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Health",
+					"sid": 513990499877399,
+					"parameters": {
+						"text": "playerHP"
+					}
+				}
+			],
+			"sid": 601724944354745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 365440396624368,
+					"parameters": {
+						"variable": "playerHP",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "MenuSoundtrack",
+					"sid": 441462384290498,
+					"parameters": {
+						"tag": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 297640918029891,
+					"parameters": {
+						"audio-file": "glitch03",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 776049367403186,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerFD",
+					"sid": 211665134822309
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 100120265413935,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 251635481761071,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 432039367536222
+		}
+	],
+	"sid": 838204116809365
+}

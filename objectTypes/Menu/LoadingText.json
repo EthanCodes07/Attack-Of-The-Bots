@@ -1,0 +1,10 @@
+{
+	"name": "LoadingText",
+	"plugin-id": "Text",
+	"sid": 825679241363490,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

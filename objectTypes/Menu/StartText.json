@@ -1,0 +1,19 @@
+{
+	"name": "StartText",
+	"plugin-id": "Text",
+	"sid": 254447722116039,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "better_shine",
+			"name": "BetterShine"
+		},
+		{
+			"effectId": "setcolor",
+			"name": "SetColor"
+		}
+	]
+}

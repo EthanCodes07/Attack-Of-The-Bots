@@ -1,0 +1,434 @@
+{
+	"name": "MainMenuEvents",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 478438619567928
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 137284125360528,
+					"parameters": {
+						"audio-file": "glitch07",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Glitch\""
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "Title",
+					"sid": 162185104129009,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "2"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Title",
+					"sid": 595437530009966,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 325129583361629
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "InputKeyboard",
+					"sid": 903072433089345,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "MenuSoundtrack",
+					"sid": 956937816505492,
+					"parameters": {
+						"tag": "\"Glitch\""
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 501389594571966,
+					"parameters": {
+						"layer": "2",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 242481539532059,
+					"parameters": {
+						"audio-file": "Glitch_21",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 309582457632832,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 238259912424445,
+					"parameters": {
+						"layer": "1",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 200961376168798,
+					"parameters": {
+						"audio-file": "Menu - Attack of the Bots OST",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"MenuOST\""
+					}
+				}
+			],
+			"sid": 943515966723228
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 531937681618170,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "MenuSoundtrack",
+					"sid": 341915030657916,
+					"parameters": {
+						"tag": "\"MenuOST\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 750486428726334,
+					"parameters": {
+						"audio-file": "Glitch_21",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 573573195880058,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 589543213910000,
+					"parameters": {
+						"layout": "Backstory"
+					}
+				}
+			],
+			"sid": 256123742348023
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "MouseInput",
+					"sid": 344394803331235,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "LoadText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 237794670159335,
+					"parameters": {
+						"slot": "\"SaveState1\""
+					}
+				}
+			],
+			"sid": 461227485439562
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "PressSpace",
+					"sid": 580437296473208,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-fade",
+					"objectClass": "PressSpace",
+					"sid": 452493180666422,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 999156206162779
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 469548158287758
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StartText",
+					"sid": 681645153839283,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BetterShine\""
+					}
+				}
+			],
+			"sid": 492809417632998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "MouseInput",
+					"sid": 463069098490700,
+					"parameters": {
+						"object": "StartText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StartText",
+					"sid": 130848800373667,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"BetterShine\""
+					}
+				}
+			],
+			"sid": 267450317714794
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "MouseInput",
+					"sid": 863098675885807,
+					"parameters": {
+						"object": "StartText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 686987000936205,
+					"parameters": {
+						"audio-file": "Click_Combo_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"Hover\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "OptionsText",
+					"sid": 841122534482670,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "LoadText",
+					"sid": 329977041335610,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StartText",
+					"sid": 109991499088299,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"SetColor\""
+					}
+				}
+			],
+			"sid": 364851297480897
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "MouseInput",
+					"sid": 894380742391767,
+					"parameters": {
+						"object": "LoadText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 906863391125120,
+					"parameters": {
+						"audio-file": "Click_Combo_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StartText",
+					"sid": 699364904882488,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "OptionsText",
+					"sid": 207811213537694,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "LoadText",
+					"sid": 781224945403430,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"SetColor\""
+					}
+				}
+			],
+			"sid": 554430301790996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "MouseInput",
+					"sid": 530938673854205,
+					"parameters": {
+						"object": "OptionsText"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "MenuSoundtrack",
+					"sid": 147324327226558,
+					"parameters": {
+						"audio-file": "Click_Combo_3",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "StartText",
+					"sid": 832354906316912,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "LoadText",
+					"sid": 967444107239705,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"SetColor\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "OptionsText",
+					"sid": 311515881370685,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"SetColor\""
+					}
+				}
+			],
+			"sid": 278663959716365
+		}
+	],
+	"sid": 644200664800393
+}

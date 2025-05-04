@@ -1,0 +1,83 @@
+{
+	"name": "Enemy Script",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Enemy",
+					"sid": 839617882994259,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "PlayerFD",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Enemy",
+					"sid": 255763634558131,
+					"behaviorType": "Turret",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Enemy",
+					"sid": 793946971023392,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "PlayerFD"
+					}
+				},
+				{
+					"id": "acquire-target",
+					"objectClass": "Enemy",
+					"sid": 708852184753770,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "PlayerFD"
+					}
+				},
+				{
+					"id": "follow-object",
+					"objectClass": "Enemy",
+					"sid": 953364206856893,
+					"behaviorType": "Follow",
+					"parameters": {
+						"object": "PlayerFD",
+						"from-current-position": true
+					}
+				}
+			],
+			"sid": 172847624862027
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 992326548260001
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Enemy",
+					"sid": 904505351787179,
+					"behaviorType": "Solid",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 131187537836629
+		}
+	],
+	"sid": 956752224795016
+}

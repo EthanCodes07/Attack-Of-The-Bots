@@ -1,0 +1,83 @@
+{
+	"name": "Sprite2",
+	"plugin-id": "Sprite",
+	"sid": 429969867940941,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 703393185486051
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 796529656156691
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 651177834950624
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 444802843594786
+		},
+		{
+			"behaviorId": "shadowcaster",
+			"name": "ShadowCaster",
+			"sid": 591776133578644
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "Lottes",
+			"name": "LottesCRT"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4050378,
+						"collisionPoly": {
+							"points": [
+								0.6539999999999997,
+								0.26,
+								0.6539999999999997,
+								0.7159999999999997,
+								0.38,
+								0.5419999999999996,
+								0.3760000000000001,
+								0.43200000000000016
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 490014900700902,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
